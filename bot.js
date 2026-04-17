@@ -270,8 +270,8 @@ const CONFIG = {
     
   ],
   
-  googleResultsPerSearch: 80,
-  maxPagesToVisit: 30,
+  googleResultsPerSearch: 50,
+  maxPagesToVisit: 20,
   maxEmailsPerDomain: 10, // Maximum number of unique emails to collect per domain
   maxPeopleToScrape: 10, // Maximum number of people (names, titles, emails) to scrape per website
   peoplePageConcurrency: 5, // Number of people pages to scrape concurrently
