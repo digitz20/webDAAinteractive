@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Update: Transition to Payroll via DAinteractive 1.5v</title>
 <style>
   body {
@@ -28,15 +29,29 @@
     text-decoration: none;
     color: inherit; /* Inherit color from parent for the text inside the link */
   }
+
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 600px) {
+    .inner-table {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .inner-table td {
+      padding: 20px !important; /* Adjust padding for mobile */
+    }
+    .outer-td {
+      padding: 10px !important; /* Adjust outer padding for mobile */
+    }
+  }
 </style>
 </head>
 <body style="background-color: #f4f4f4; margin: 0; padding: 20px;">
 <!-- Outer table for centering and background -->
 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f4f4f4;">
   <tr>
-    <td align="center" style="padding: 20px;">
+    <td align="center" class="outer-td" style="padding: 20px;">
       <!-- Inner table for the white content area -->
-      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="inner-table" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <tr>
           <td style="padding: 30px; background-image: url('https://i.pinimg.com/736x/f8/b1/7e/f8b17eddfcde1a9f039e48e81995664b.jpg'); background-position: center center; background-repeat: no-repeat; background-size: 80% auto;">
             <!--[if gte mso 9]>
