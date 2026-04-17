@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const PORT = process.env.PORT || 2367;
+const PORT = process.env.PORT || 7483;
 
 let isBotRunning = false;
 
