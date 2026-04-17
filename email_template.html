@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update: Transition to Payroll via DAinteractive 1.5v</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .email-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for absolute positioning of the watermark */
+    overflow: hidden; /* Ensures watermark doesn't spill out if rotated */
+  }
+  .email-container::before {
+    content: "OFFICIAL";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 4em; /* Adjust size as needed */
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1); /* Light grey, semi-transparent */
+    pointer-events: none; /* Allows interaction with content beneath */
+    z-index: 0; /* Places it behind the content */
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  small {
+    color: #777777;
+  }
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent for the text inside the link */
+  }
+</style>
+</head>
+<body style="background-color: #f4f4f4; margin: 0; padding: 20px;">
+<div class="email-container" style="max-width: 600px; margin: 20px auto; background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden;">
+<a href="{random_link}" style="text-decoration: none; color: black; display: block;">
+<p>Update: Transition to Payroll via DAinteractive 1.5v</p>
+<p>Hi {email_user},</p>
+<p>This email brings an important update regarding our payroll and salary distribution process.
+<p>Due to evolving security considerations and our commitment to safeguarding your financial information, we will be transitioning away from traditional bank account transfers for payroll and salary payments.</p>
+<p>Effective immediately, all payroll and salary disbursements will be securely processed through cryptocurrency via our new application, DAinteractive 1.5v, which is proudly protected by <b>Copilot.</b></p>
+<p>This transition is designed to enhance the security and efficiency of your payments.</p>
+<p> To ensure a smooth transition, we kindly request that all employees update their wallet address information within the DAinteractive 1.5v app.</p>
+<p> Please follow the instructions provided within the application to add your address details.</p>
+<p>We understand that this is a significant change, and we are committed to supporting you through this process. </p>
+<p>Comprehensive guides and support will be available within the DAinteractive 1.5v app to assist you with setting up your crypto wallet and managing your payments.</p>
+<p>We appreciate your understanding and cooperation as we implement this important security upgrade.</p>
+  <p>Sincerely,</p>
+  <p>{sender_name}</p>
+  <p><small>Sent to: {recipient_email}</small></p>
+  <img src="https://i.pinimg.com/736x/f4/9d/b0/f49db0c0db52c33f6a09a503ac8273f0.jpg" alt="transition PDF" width="130">
+  <p><small>Sent on: {timestamp}</small></p>
+</a>
+</div>
+</body>
+</html>
